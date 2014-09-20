@@ -5,8 +5,7 @@
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 1.5.0">
-<meta name="author" content="PJ-74">
-<title>Levantamento de Requisitos do SISLEGIS</title>
+<title>Levantamento de Requisitos - SISLEGIS</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic|Noto+Serif:400,400italic,700,700italic|Droid+Sans+Mono:400">
 <style>
 /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
@@ -412,30 +411,449 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </head>
 <body class="article">
 <div id="header">
-<h1>Levantamento de Requisitos do SISLEGIS</h1>
-<div class="details">
-<span id="author" class="author">PJ-74</span><br>
-</div>
+<h1>Levantamento de Requisitos - SISLEGIS</h1>
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_introdução">Introdução</h2>
+<h2 id="_Áreas_interessadas">1. Áreas interessadas</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>Teste Raphael</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Apoio Administrativo;</p>
+</li>
+<li>
+<p>Assessoria Parlamentar (ASPAR);</p>
+</li>
+<li>
+<p>Referência Legislativa;</p>
+</li>
+<li>
+<p>Gabinete de Assuntos Legislativo;</p>
+</li>
+</ul>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_considerações_finais">Considerações finais</h2>
+<h2 id="_escopo_da_demanda">2. Escopo da demanda</h2>
 <div class="sectionbody">
-
+<div class="paragraph">
+<p>Criação de um novo sistema de acompanhamento legislativo, tendo em vista a demanda referente as Pautas Semanais com assuntos de interesse do Ministério da Justiça. Esse Sistema deverá organizar e facilitar o processo de manutenção das informações como Proposições, Dossiês, Exposição de Motivos, Manifestações, etc.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_cenário_atual">3. Cenário Atual</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Atualmente é utilizado pela SAL dois sistemas: EDENS e SISLegis(Desenvolvido pelo consultor Mateus).</p>
+</div>
+<div class="paragraph">
+<p>O Sistema Endens encontra-se em desuso pela secretária, e o contrato com a empresa responsável foi cancelado.</p>
+</div>
+<div class="paragraph">
+<p>Os motivos para não utilização do EDENS são:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Grande número de funcionalidades desnecessárias;</p>
+</li>
+<li>
+<p>Interfaces complicadas;</p>
+</li>
+<li>
+<p>Problemas de integração com o MJDOC;</p>
+</li>
+<li>
+<p>Impossibilidade de anexação de arquivos;</p>
+</li>
+<li>
+<p>Problemas na verificação dos nomes dos Projetos de Leis importados, gerando duplicidade;</p>
+</li>
+<li>
+<p>Impossibilidade no acompanhamento de tarefas;</p>
+</li>
+<li>
+<p>Falta de funcionalidades importantes para a SAL;</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>O atual Sistema SisLegis atende em partes os interesses da Secretária. Sua principal funcionalidade é a Pauta Semanal, porém ainda necessita de melhorias. Outro problema é o consumo das informações, pois somente é consumidas as informações da Câmara, faltando o "push" das informações do Senado.</p>
+</div>
+<div class="paragraph">
+<p>Em virtude da insuficiência dos dois Sistemas, é frequente entre as áreas:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Grande número de troca de e-mails;</p>
+</li>
+<li>
+<p>Geração de planilhas em Excel para controle interno;</p>
+</li>
+<li>
+<p>Produção manual de documentos;</p>
+</li>
+<li>
+<p>Compartilhamento de arquivos na rede sem backup;</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_requisitos_funcionais">4. Requisitos Funcionais</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Manter Usuário</strong></p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Anexar currículos da equipe;</p>
+</li>
+<li>
+<p>Gerenciar perfil usuário;</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p><strong>Consultar Tipo Proposição</strong></p>
+</li>
+<li>
+<p><strong>Manter Proposição</strong></p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Incluir número do protocolo MJDOC;</p>
+</li>
+<li>
+<p>Consumir dados das duas casas legislativas;</p>
+</li>
+<li>
+<p>Acessar trâmites das proposições nas duas casas legislativas;</p>
+</li>
+<li>
+<p>Atrelar registro de manifestações e documentos administrativos relacionados;</p>
+</li>
+<li>
+<p>Anexar Dossiê;</p>
+</li>
+<li>
+<p>Priorização das Proposições para reunião de Pauta;</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p><strong>Manter Exposições de Motivos</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Internas (de autoria do MJ)</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Elaborar EMI de acordo com as orientações do Manual de Redação da Presidência da República e geração de documento padronizados para impressão e assinatura;</p>
+</li>
+<li>
+<p>Anexar notas elaboradas;</p>
+</li>
+<li>
+<p>Anexar EMI’s arquivadas sobre o mesmo tema;</p>
+</li>
+<li>
+<p>Relacionar a EMI com o PL e norma originada;</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>Externo (de autoria de outros órgãos em co-autoria com o MJ)</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Anexar texto das EMI&#8217;s recebidas via SIDOF;</p>
+</li>
+<li>
+<p>Juntar notas elaboradas;</p>
+</li>
+<li>
+<p>Anexar documentos administrativos relacionados</p>
+</li>
+</ol>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Manter Manifestação</strong></p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Notas;</p>
+</li>
+<li>
+<p>Notas técnicas;</p>
+</li>
+<li>
+<p>Pareceres;</p>
+</li>
+<li>
+<p>Posicionamentos preliminares;</p>
+</li>
+<li>
+<p>Anexar textos das manifestações</p>
+</li>
+<li>
+<p>Gerar documento de Manifestação;</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p><strong>Manter requerimento</strong></p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Criar alerta quando o prazo de Requerimento estiver próximo;</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p><strong>Manter Contatos da Secretária</strong></p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Agendar compromissos;</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p><strong>Cadastrar documentos administrativos</strong></p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Ofícios</p>
+</li>
+<li>
+<p>Memorandos</p>
+</li>
+<li>
+<p>Despachos</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p><strong>Realizar controle de distribuição de demandas e prazos para resposta</strong></p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Anexar arquivos e notificações no módulo de tarefas</p>
+</li>
+<li>
+<p>Filtro de destinatários</p>
+</li>
+<li>
+<p>Notificação via e-mail</p>
+</li>
+<li>
+<p>Priorização de tarefas</p>
+</li>
+<li>
+<p>Possibilitar o usuário verificar suas tarefas</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p><strong>Gerar relatórios referentes à distribuição das demandas, responsáveis e prazos</strong></p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Possibilidade de gerar em mais de um formato de arquivo</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p><strong>Indexar temas por termos autorizados</strong></p>
+</li>
+<li>
+<p><strong>Montar Pauta Semanal</strong></p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Consultar proposições das duas casas;</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p><strong>Categorizar(tags) conteúdo</strong></p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Proposições;</p>
+</li>
+<li>
+<p>Manifestações;</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p><strong>Pesquisas por</strong></p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>Forma livre, pesquisando todo conteúdo do portal;</p>
+</li>
+<li>
+<p>Conteúdo dentro dos Documentos;</p>
+</li>
+<li>
+<p>Categorias;</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p><strong>Incluir dados do processo físico cadastrado no MJDOC</strong></p>
+</li>
+<li>
+<p><strong>Migração de dados do EDENS para o sistema a ser construído</strong></p>
+</li>
+<li>
+<p><strong>Manter demanda dos parlamentares</strong></p>
+</li>
+<li>
+<p><strong>Manter parecer de sansão</strong></p>
+</li>
+<li>
+<p><strong>Notificações de alterações de texto nos Projetos de Lei</strong></p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_requisitos_funcionais_da_referência_humberto">5. Requisitos Funcionais da Referência (Humberto)</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Manter portarias</strong></p>
+</li>
+<li>
+<p><strong>Pesquisa de portarias para o público externo</strong></p>
+</li>
+<li>
+<p><strong>Migração de dados de portarias do sistema atual para o sistema a ser construído</strong></p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_requisitos_funcionais_da_aspar">6. Requisitos Funcionais da ASPAR</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>Mecanismo de notificação automática a medida que requerimentos de interesse do MJ surjam nas pautas da Câmara ou do Senado</strong></p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_requisitos_não_funcionais">7. Requisitos Não Funcionais</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>O Sistema será desenvolvido na linguagem Java;</strong></p>
+</li>
+<li>
+<p><strong>O Sistema integra com outras aplicações;</strong></p>
+</li>
+<li>
+<p><strong>O sistema deverá ser acessado completamente via browser;</strong></p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_atores">8. Atores</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Chefe de Gabinete;</p>
+</li>
+<li>
+<p>Secretário de Assuntos Legislativos;</p>
+</li>
+<li>
+<p>Advogados;</p>
+</li>
+<li>
+<p>Coordenadores;</p>
+</li>
+<li>
+<p>Acessores;</p>
+</li>
+<li>
+<p>Equipe de apoio dos coordenadores;</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_glossário">9. Glossário</h2>
+<div class="sectionbody">
+<div class="dlist glossary">
+<dl>
+<dt>EMI</dt>
+<dd>
+<p>- Exposição de Motivos Interministerial.</p>
+</dd>
+<dt>PL</dt>
+<dd>
+<p>- Projeto de Lei;</p>
+</dd>
+<dt>SAL</dt>
+<dd>
+<p>- Secretária de Assunto Legislativo;</p>
+</dd>
+<dt>SIDOF</dt>
+<dd>
+<p>- Sistema de Geração e Tramitação de Documentos</p>
+</dd>
+<dt>ASPAR</dt>
+<dd>
+<p>- Assessoria Parlamentar</p>
+</dd>
+</dl>
+</div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2014-09-19 00:01:00 BRT
+Last updated 2014-09-20 12:34:21 BRT
 </div>
 </div>
 </body>

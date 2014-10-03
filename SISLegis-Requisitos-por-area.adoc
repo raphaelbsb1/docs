@@ -1,0 +1,64 @@
+= [SisLegis]Requisitos por áreas(personas)
+
+== Referência
+* Administração das portarias do MJ;
+* Pesquisa global;
+* Categorizar / Indexar Conteúdo;
+* Notificação automática por categoria; 
+
+== ASPAR
+* Montar pauta semanal;
+* Administrar dados (Consulta e verificação) do EDENS;
+* Administrar proposição (Possibilidade de comentar);
+* Consultar documentação do SEI e MJDOC;
+* Notificação automática de movimentação ou alterações de textos de proposições;
+* Administrar manifestações;
+* Administrar contatos das secretárias - Migrar os dados da agenda do EDENS para o SISLEGIS e também possibilitar trazer os contatos da câmara e do senado;
+* Contatos dos parlamentares (Senado, câmara);
+* Criar um formulário para cadastro do perfil dos parlamentares;
+* Agenda dos parlamentares;
+* Pesquisar e identificar no D.O.U. demandas dos parlamentares (Naturalização, utilidade pública, etc).
+
+== Apoio / Gabinete
+* Administrar proposições;
+* Status da análise da proposição;
+* Administrar exposição de motivos;
+* Manifestações SAL (Geração do número);
+* Manifestações dos ministérios;
+* Controle e distribuição de demandas e prazos;
+* Pesquisa global (SEI/MJDOC) com filtro;
+* Relatórios de status de análises;
+* Categorizar por tags;
+* Consultar o EDENS;
+* Receber status de tramitação de projetos / proposições
+* Geração automática de números para as manifestações da SAL
+
+== Secretárias 
+* Padronização das manifestações - Formulários;
+* Possibilitar controle de ligações;
+* Contatos atualizados (Busca para contatos);
+* Possibilitar Relatório dos Contatos inseridos no SISLEGIS - Mensal
+* Controle de ligações realizadas - Relatório - Por cargo, nome e data.
+* Controle de tarefas de agenda;
+* Controle de processos e demandas;
+* Pesquisa global;
+* Agenda com convite e contatos interligados;
+* Modelos de documentos administrativos (Upload e Download de templates);
+* Possibilitar extração da base de dados dos contatos inseridos para saneamento e migração para o SISLEGIS.
+
+== Elaboração normativa
+* Cadastrar proposições / Administrar manifestações;
+* Distinguir proposições entre os projetos que tramitam no legislativo e executivo.
+* Status da tramitação no congresso e de maneira geral;
+* Distribuição de tarefas;
+* Gerenciamento das tarefas (com avisos de prazos);
+* Elaboração normativa preliminar;
+* Notificação de movimentação e de alteração de texto; notificação dos prioritários (alerta);
+* Personalizar se quer receber notificações (de uma lei, projeto etc) específico;
+* Pesquisa global;
+* TAGS;
+* Comentários com possibilidade de alterar a data e hora de inserção.
+
+
+ 
+
